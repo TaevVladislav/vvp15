@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+float r1; float r2; float s;
+float RingS(float r1, float r2) {
+	s = 3.14 * r1 * r1 - 3.14 * r2 * r2;
+	return s;
+}
+
+int main() {
+	cout << "Enter R1 - ";
+	cin >> r1;
+	cout << "Enter R2 - ";
+	cin >> r2;
+	cout << "Result = " << RingS(r1, r2) << endl;
+}
