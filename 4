@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+float x; float y;
+int Quarter(float x, float y) {
+	if (x > 0 and y > 0) {
+		return 1;
+	}
+	if (x < 0 and y > 0) {
+		return 2;
+	}
+	if (x < 0 and y < 0) {
+		return 3;
+	}
+	else {
+		return 4;
+	}
+}
+
+int main() {
+	cout << "Enter x - ";
+	cin >> x;
+	cout << "Enter y - ";
+	cin >> y;
+	cout << Quarter(x, y) << " quarter)" << endl;
+}
